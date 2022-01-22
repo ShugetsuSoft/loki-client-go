@@ -2,8 +2,8 @@ package loki_client_go
 
 import (
 	"encoding/json"
+	"github.com/ShugetsuSoft/loki-client-go/lib"
 	"github.com/dghubble/sling"
-	"loki-client-go/lib"
 	"net/http"
 	"strconv"
 	"sync"

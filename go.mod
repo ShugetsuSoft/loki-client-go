@@ -1,4 +1,4 @@
-module loki-client-go
+module github.com/ShugetsuSoft/loki-client-go
 
 go 1.17
 

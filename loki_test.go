@@ -1,7 +1,7 @@
 package loki_client_go
 
 import (
-	"loki-client-go/lib"
+	"github.com/ShugetsuSoft/loki-client-go/lib"
 	"testing"
 	"time"
 )
