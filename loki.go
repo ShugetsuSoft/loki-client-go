@@ -68,11 +68,13 @@ func (cli *LokiClient) Push() error {
 func (cli *LokiClient) RunPush() chan error {
 	errs := make(chan error)
 	go func() {
-		err := cli.Push()
-		if err != nil {
-			errs <- err
+		for {
+			err := cli.Push()
+			if err != nil {
+				errs <- err
+			}
+			time.Sleep(time.Second * 10)
 		}
-		time.Sleep(time.Second * 10)
 	}()
 	return errs
 }
