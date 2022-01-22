@@ -1,0 +1,2 @@
+# loki-client-go
+ A GOLANG CLIENT TO SEND LOGS TO LOKI
