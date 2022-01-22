@@ -28,6 +28,10 @@ func NewLokiClient(uri string) *LokiClient {
 	}
 }
 
+func (cli *LokiClient) SetURI(uri string) {
+	cli.base = sling.New().Base(uri)
+}
+
 func (cli *LokiClient) Push() error {
 	if len(cli.labels) < 1 {
 		return nil
